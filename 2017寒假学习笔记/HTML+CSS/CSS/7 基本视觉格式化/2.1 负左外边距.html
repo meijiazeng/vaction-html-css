@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			/*如果左边距为负，不仅段落超出div边框，还会超出浏览器本身的边界*/
+			div{
+				width: 400px;
+				border: 3px solid black;
+			}
+			p.wide{
+				margin-left: -50px;
+				width: auto;
+				margin-right: 10px;
+				border: 3px solid gray;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<p class="wide">paragraph</p>
+			<p>Another paragraph</p>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<!--输入一个同学的成绩，大于90优秀，大于80小于90良好，大于70小于80一般，
+		大于60小于70及格，小于60不及格-->
+		<script type="text/javascript">
+			var score = prompt("皮皮虾，今天你考了几分啊？");
+			var num = Math.floor(score/10);
+			switch(num){
+				case 9:
+				console.log("优秀");
+				break;
+				case 8:
+				console.log("良好");
+				break;
+				case 7:
+				console.log("一般");
+				break;
+				case 6:
+				console.log("及格");
+				break;
+				default:
+				console.log("不及格");
+			}
+			console.log("over");
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style> 
+		 /*原理: 让一个白色的三角层叠一个同等大的颜色三角,露出的地方就是我们要的镂空三角*/
+			div{
+				position: relative;
+				width: 500px;
+				height: 500px;
+				border: 1px solid green;
+			}
+			.one{
+				position: absolute;
+				top: 0;
+				right: 0px;
+				display: inline-block;
+				width: 0px;
+				height: 0;
+				border-width: 10px;
+				border-color:  transparent transparent transparent red;
+				border-style: solid solid solid solid ;
+			}
+			.two{
+				position: absolute;
+				top: 0;
+				right: 5px;
+				display: inline-block;;
+				width: 0px;
+				height: 0;
+				border-width: 10px;
+				border-style: solid solid solid solid ;
+				border-color:  transparent transparent transparent white;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<span class="one"></span>
+			<span class="two"></span>
+		</div>
+	</body>
+</html>

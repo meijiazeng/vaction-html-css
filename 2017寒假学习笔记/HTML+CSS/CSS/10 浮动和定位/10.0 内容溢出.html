@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			p{
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 15%;
+				height: 7em;
+				background: gray;
+				/* 默认值vixible表明，元素的内容在元素外框 也可见*/
+				/*overflow: visible;*/
+				
+				/*overflow: scroll;*/
+				/* overflow 元素的内容会在元素框的边界处裁剪。溢出的部分还是会看见
+				 不过会添加显示滚动条*/
+				
+				/*overflow: hidden;*/
+				/* 元素的内容会在元素框的边界处裁剪，不过不提供滚动接口
+				 使用户访问超出裁剪区域的内容*/
+				
+				overflow: auto;
+				/* 自动采取任何行动  在必要时候加上滚动条*/
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<p>
+				This is a positioned element that is acting as a 'sidebar'.but it's
+				 only 7 emta;.Any overfllowing content will be visible outside the 
+				 boundaries of the elementbox.This is a positioned element that is acting as a 'sidebar'.but it's
+				 only 7 emta;.Any overfllowing content will be visible outside the 
+				 boundaries of the elementbox
+			</p>
+		</div>
+	</body>
+</html>

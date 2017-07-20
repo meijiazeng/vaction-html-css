@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			/*body{
+				direction: rtl;
+				
+				 也可以改变方向  rtl(从左边往右边  div也随之改变方向)
+			}*/
+			.flex-container{
+				/*  设置div在容器中的布置  位于默认位置 沿着水平线 从左往右*/
+				display: -webkit-flex;
+				/* 也可以设置div在容器中的布置方向*/
+				/*-webkit-flex-direction: row-reverse;*/
+				
+				/*  内容属性  (默认值，物品位于容器的开头)*/
+				/* 下面的是设置物品位容器的 末端*/
+				/*-webkit-justify-content: flex-end;*/
+				
+				/*  对齐项目属性*/
+				/*  默认是适应容器  （垂直对齐）*/
+				/*-webkit-align-items: stretch;*/
+				
+				
+				/* 指定是否应该卷绕  如果在一条弹性线上没有足够的空间*/
+				/*-webkit-flex-wrap: wrap;*/
+				/*  修改属性的flex-wrap 类似于align-items*/
+				/*-webkit-align-content: space-around;*/
+				
+				width: 400px;
+				height: 250px;
+				background-color: lightgrey;
+				
+			}
+			.flex-item{
+				background-color: blue;
+				width: 100px;
+				height: 100px;
+				margin: 10px;
+			}
+				/*  决定是哪个元素先出现*/
+			/*.first{
+				-webkit-order: 1;
+			}
+			.second{
+				-webkit-order: 2;
+			}*/
+			
+			/*  导致所有额外的空间被吸收到该元素的右侧*/
+			/*.flex-item:first-child{
+				margin-right: auto;
+			}*/
+			
+			/* 下面属性能够覆盖容器中的align-items 属性  具有和align-items属性相同的可能值*/
+			.item1{
+				align-self: flex-start;
+				/*  指定div的长度  （消耗容器中的可用空间）*/
+				-webkit-flex: 2;
+			}
+			.item2{
+				-webkit-flex: 1;
+				align-self: center;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="flex-container">
+			<div class="flex-item second item1" >flex item 1</div>
+			<div class="flex-item first item2">flex item 2</div>
+			<div class="flex-item">flex item 3</div>
+		</div>
+	</body>
+</html>

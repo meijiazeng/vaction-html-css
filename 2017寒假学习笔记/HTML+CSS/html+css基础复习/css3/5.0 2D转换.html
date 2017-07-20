@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.one{
+				width: 300px;
+				height: 300px;
+				background: red;
+				/*移动元素 translate()*/
+				/*transform: translate(200px,200px);*/
+				/* 将元素从当前位置（根据x轴和y轴给出的参数）移动*/
+				
+				/*旋转元素 rotate()*/
+				/*transform: rotate(-20deg);*/
+				/* 根据给定的度数顺时针或者逆时针旋元件， 正数顺时针旋转，负数逆时针旋转*/
+				
+				/*缩放元素 scale()*/
+				/*transform: scale(2,3);*/
+				/* 将元素增加到原始宽度的二倍 高度增加到三倍*/
+				/*transform: scale(0.5,0.5);*/
+				/* 将元素减少到原始高度和宽度的一半*/
+				
+				/*倾斜元素 skew()*/
+				/*transform: skewX(30deg);
+				/* 水平方向（沿着x轴倾斜）的角度*/
+				/*transform: skewY(30deg);*/
+				/*  垂直方向（沿着Y轴倾斜）的角度*/
+				/*transform: skew(30deg,10deg);*/
+				/*  第一个参数表示水平方向的倾斜角度，第二个是垂直的*/
+				transform: matrix(1,0,0,1,30,30);
+				/*transform: matrix(scaleX(),skewX(),skewY()scaleY(),translateX(),translateY());*/
+				
+			}
+		</style>
+	</head>
+	<body>
+		<div class="one"></div>
+		<div class="two"></div>
+		<div class="three"></div>
+	</body>
+</html>

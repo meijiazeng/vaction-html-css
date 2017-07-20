@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			/*尽量避免全局使用header、footer、aside等语义标签*/
+
+			header{
+				width: 980px;
+				height: 150px;
+				margin: 0 auto;
+				border: 1px solid #CCC;
+			}
+			nav{
+				background: red;
+			}
+			section{
+				height: 500px;
+				width: 980px;
+				margin: 0 auto;
+			}
+			article{
+				width: 780px;
+				height: 100%;
+				float: left;
+				background: blue;
+			}
+			aside{
+				width: 200px;
+				height: 100%;
+				float: right;
+				background-color: pink;
+			}
+			footer{
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<!-- 頭部（頁眉）-->
+		<header>
+			<!-- 導航欄-->
+			<nav>
+				<a href="#">首页</a>
+				<a href="#">新闻</a>
+				<a href="#">资讯</a>
+			</nav>
+		</header>
+		
+		<!-- 區塊-->
+		<section>
+			<!-- 文章-->
+			<article>
+				主体文章	
+				<progress></progress>
+				<!--  進度條 -->
+				<progress min="0" max="100" value="30"></progress>
+				<!-- 可以設置滾動條的位置停留在哪裡-->
+			</article>
+			<aside>
+				<a href="#">其他的文章</a>
+				<a href="#">其他的文章</a>
+				<a href="#">其他的文章</a>
+				<a href="#">其他的文章</a>
+				<a href="#">其他的文章</a>
+				<a href="#">其他的文章</a>
+			</aside>
+			<!-- 側邊欄-->
+		</section>
+		
+		
+		<footer>
+			版权所有岭南
+		</footer>
+		<!--底部（頁腳）-->
+		
+	</body>
+</html>

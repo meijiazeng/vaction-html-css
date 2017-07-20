@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			/*上下外边距设置为auto时 实际高度为0*/
+			.one{
+				height: 6em;
+			}
+			.two{
+				height: auto;
+			}
+			.p1{
+				height: 50%;
+			}
+			.p2{
+				height: 50%s;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="one">
+			<p class="p1">Half as tall</p>
+		</div>
+		<div class="two">
+			<p class="p2">NOT half as tall;height reset to auto</p>
+		</div>
+	</body>
+</html>

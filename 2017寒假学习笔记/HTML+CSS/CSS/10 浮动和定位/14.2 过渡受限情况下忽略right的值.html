@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			
+			div{
+				position: relative;
+				width: 25em;
+				border: 1px dotted;
+			}
+			span{
+				position: absolute;
+				top: 0;
+				left: 1em;
+				right: 1em;
+				width: 10em;
+				/* 	定位元素span属性只增加14em 而包含块宽度为5em,
+				 这里有11em 差额*/
+				margin-left: 1em;
+				margin-right: 1em;
+				background: silver;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			An abcolutely positioned element can have
+			its content <span> shrink-wrapped</span>
+			thanks to the way positioning rules work.
+		</div>
+	</body>
+</html>

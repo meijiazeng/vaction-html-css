@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			body{
+				background-color: #F7F7F7;
+				margin: 0;
+				padding: 0;
+				font-family: "微软雅黑";
+			}
+			form{
+				max-width: 680px;
+				width: 100%;
+				margin: 25px auto 0;
+			}
+			label{
+				width: 100%;
+				display: block;
+			}
+			input{
+				width: 100%;
+				padding: 14px 14px 15px;
+				display: block;
+				font-size: 16px;
+				box-sizing: border-box;
+			}
+			meter,progress{
+				display: block;
+				width: 100%;
+				margin-top: 12px;
+			}
+			.btn input{
+				color: green;
+				background-color: #F7F7F7;
+			}
+		</style>
+		
+	</head>
+	<body>
+		<form action="">
+			<fieldset>
+				<legend>学生档案</legend>
+				
+				<label for="">
+					姓名：<input type="text" placeholder="请输入姓名" required autoautofocus/>
+				</label>
+				<label for="">
+					手机号码：<input type="text" placeholder="请输入手机号码"/>
+				</label>
+				<label for="">
+					邮箱地址：<input type="email" placeholder="请输入邮箱地址"/>
+				</label>
+				<label for="">
+					所属学院：<input type="text" list="course" value="前端与移动开发" />
+					<datalist id="coure">
+						<option value="前端与移动开发学院"></option>
+						<option value="JAVA"></option>
+						<option value=".NET"></option>
+						<option value="IOS"></option>
+					</datalist>
+				</label>
+				<label for="">
+					入学成绩：<input type="number" max="100" min="0" value="80" id="score"/>
+ 				</label>
+ 				<label for="">
+ 					基础水平：<meter max="100" min="0" low="60" high="80" value="80" id="level"></meter>
+ 				</label>
+				<label for="">
+					入学日期：<input type="date" value="2017-6-8" />
+				</label>
+				<label for="">
+					入学日期：<input type="date" value="2020-6-17"  />
+				</label>
+				<label for="">
+					课程进度：<progress max="100" step="10" value="10"></progress>
+				</label>
+				<div class="btn">
+					<input type="submit" value="提交" />
+				</div>
+			</fieldset>
+		</form>
+		<script>
+			var course = document.getElementById('course');
+			var level = document.getElementById('level');
+			score.oninput=function(){
+				level.value=this.value;
+			}
+		</script>
+	</body>
+</html>

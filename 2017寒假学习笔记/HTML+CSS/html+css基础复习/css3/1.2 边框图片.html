@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			div{
+				height: 150px;
+				width: 300px;
+				border-bottom: 30px;
+			}
+			.father{
+				border: 10px solid  transparent;
+				border-image: url(border.png) 30 round;
+			/*border简写 border-image-source(图片) 
+			 * border-image-slice(切片)  默认不设置就是stretch 拉伸  （round 平铺）(repeat重复) 
+			 border-image-width(边框图片宽度) border-image-outset(边框图片外凸)
+			 border-image-repeat(边框图片重复)*/
+			}
+			.son{
+				border: 10px dashed gray;
+				border-image: url(border.png) 30% repeat;
+			}
+			.test{
+				border: 10px dotted darkblue;
+				border-image: url(border.png) 100%;
+			}
+			.main{
+				border: 10px solid deeppink;
+				border-image: url(border.png) 30 stretch;
+				/* 图像的中间部分被拉以创建边框*/
+			}
+		</style>
+	</head>
+	<body>
+		<div class="father"></div>
+		<div class="son"></div>
+		<div class="test"></div>
+		<div class="main"></div>
+	</body>
+</html>

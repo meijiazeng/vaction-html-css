@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			div{
+				position: relative;
+			}
+			span{
+				display: inline-block;
+				position: absolute;
+				top: 10px;
+				height: 0;    /* 当宽高为0时,四个边框就会形成一个正方体*/
+				width: 0;
+				border-width: 10px;
+				border-style: solid;
+				border-color: black transparent transparent transparent;
+				/*transparent 边框颜色为透明 就剩下一个角*/
+				}
+		</style>
+	</head>
+	<body>
+			这是一段文本<span></span>
+	</body>
+</html>

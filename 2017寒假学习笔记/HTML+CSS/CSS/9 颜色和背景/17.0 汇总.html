@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			/* 以下背景的设置都是等价*/
+			body{
+				background-color: white;
+				background-image: url(../../img/3.jpg);
+				background-position: top left;
+				background-repeat: repeat-y;
+				background-attachment: fixed;
+			}
+			body{
+				background: white url(../../img/3.jpg) top left repeat-y fixed;
+			}
+			body{
+				background: fixed url(../../img/3.jpg) white top left repeat-y ;;
+			}
+			body{
+				background: url(../../img/3.jpg) white repeat-y fixed top left ;
+			}
+		</style>
+	</head>
+	<body>
+		
+	</body>
+</html>

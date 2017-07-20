@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			
+			/*在不支持html5新標籤的瀏覽器裡面,會將這些新的標籤解析為行內元素,只需轉換為塊元素就可以了*/
+			
+			header{
+				display: block;
+				width: 980px;
+				height: 100px;
+				margin: 0 auto;
+				background-color: red;
+			}
+			footer{
+				display: block;
+				width: 980px;
+				height: 80px;
+				margin: 0 auto;
+				background-color: blue;
+			}
+		</style>
+		<!-- cc:ie6 (快捷方式)-->
+		
+		<!--[if lte IE 6]>
+			<script src="html5shiv.min.js"></script>
+		<![endif]-->
+		<!-- 小於等於ie6就會執行裡面的代碼-->
+		<!-- lt:less than(小於等於)-->
+		
+		
+		
+		
+		
+		<!-- 引入第三方庫  也可以解決ie9以下版本的兼容問題-->
+		<!--這個庫會自動通過document.createElement('tagName')創建所有html5的新標籤-->
+		<!--<script src="html5shiv.min.js"></script>-->
+		<script>
+//			document.createElement('header');
+//			document.createElement('footer');
+			// 兼容ie6 
+		</script>
+	</head>
+	<body>
+		<header>
+			
+		</header>
+		<footer></footer>
+	</body>
+</html>

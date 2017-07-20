@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			/*100和400相当于一样的字体粗度normal，所以字体粗细不变*/
+			p{
+				font-weight: 100;
+			}
+			p span{
+				font-weight: 400;
+			}
+			/*400基础上更粗，所以跳到700*/
+			strong{
+				font-weight: bolder;
+			}
+			/*700再上只有800*/
+			strong b{
+				font-weight: bolder;
+			}
+		</style>
+	</head>
+	<body>
+		<p>This paragraph contains elements of increasing weight:there is a
+		<span>span element that contains a <strong>strongly emphasized element
+		and a <b>boldface element</b></strong>
+		</span></p>.
+	</body>
+</html>

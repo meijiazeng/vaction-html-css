@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			p{
+				font-size: 12px;
+				line-height: 12px;
+			}
+			strong{
+				font-size: 24px;
+			}
+			/*因为tall文本指定line-height等于18px，font-size是12px
+			 间距为6，半间距为3，会增加到内容区的顶端以及底端*/
+			span{
+				vertical-align: top;
+				line-height: 18px;
+			}
+		</style>
+	</head>
+	<body>
+		<p>
+			this is text,<em>some of which is emphasized</em>, plus other text<br />
+			that is <strong>strong</strong>and <span>tall</span> and that is <br />
+			largar than the surrounding text.
+		</p>
+	</body>
+</html>

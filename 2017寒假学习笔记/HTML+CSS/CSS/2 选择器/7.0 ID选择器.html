@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+		/* 类选择器的值可以相同 但是id的值不能有重复*/
+			#first-para{
+				font-weight: bold;
+			}
+			/* 会让id属性中包含值first-para所有元素显示为粗体文字*/
+			#lead-para{
+				font-weight: bold;
+			}
+			/* 会让id属性中包含值lead-para所有元素显示为粗体文字*/
+		</style>
+	</head>
+	<body>
+		<p id="first-para">
+			This is paragraph.
+		</p>
+		<p id="lead-para">
+			This is paragraph will be boldfaced.
+		</p>
+		<p>
+			This paragraph will NOT  be bold.
+		</p>
+	</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			/*常用解决办法是使间隔图像成为块级元素，这样就不会生成行框*/
+			td{
+				font-size: 1px;
+				line-height: 1px;
+				font-size: 12px;
+			}
+			/*or 将包含图像的表单元格的font-size和line-height都设置为1px*/
+			img.black{
+				/*height: 1px;`
+				width: 10px;*/
+				/*display: block;*/
+			}
+		</style>
+	</head>
+	<body>
+		<td>
+			<img class="black" src="../../img/1.jpg"/>
+		</td>
+	</body>
+</html>

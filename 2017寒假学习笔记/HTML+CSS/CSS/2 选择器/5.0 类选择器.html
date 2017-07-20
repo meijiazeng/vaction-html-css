@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			/**.warning{
+				font-weight: bold;
+			}*/
+			/* font-weight：bold样式会应用到class属性值为warning的所有元素（ * 通赔选择器）*/
+			
+			/*p.warning{
+				font-weight: bold;
+			}*/
+			/*选择器会匹配class属性包含warning的所有p元素，所以span的warning不会改变*/
+			
+			/*p.warning{ font-weight: bold;}
+			span.warning{ font-style: italic;}*/
+			/*这样span 才会有自己的样式*/
+			
+			/* 下面是一个通用类选择器和一个元素特定类选择器*/
+			.warning{ font-style: bold;}
+			span.warning{ font-style: italic;}
+			/* 所有.warning都会变成斜体，不过只有class为warning的span 才会是粗斜体*/
+		</style>
+	</head>
+	<body>
+		<h1>
+			Plutonium
+		</h1>
+		<p>
+			Useful for many applications,plutonium can also be dangerous if improperly handled.
+		</p>
+		<h2>
+			Safety Information
+		</h2>
+		<p class="warning"> 
+			When hangling plutonium,care must be taken to avoid the formaration of a critical mass.
+		</p>
+		<p>
+			With plutonium ,<span class="warning">the possibility of implosion is very real,and must be abvoid at all costs.</span>
+			This can be accomplished by keepind the various masses separete.
+		</p>
+		<h3>
+			Comments
+		</h3>
+		<p>
+			It's best to avoid using plutonium <a>at all</a> if it can be avoided.
+		</p>
+	</body>
+</html>

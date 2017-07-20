@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			
+			@keyframes example{
+				from{background-color: red;}
+				to{background-color: yellow;}
+			}
+			
+			.one{
+				width: 100px;
+				height: 100px;
+				background-color: red;
+				animation-name: example;
+				animation-duration: 4s;
+				/* 动画延迟开始启动*/
+				animation-delay: 2s;
+				
+				/*  设置动画运行的次数*/
+				animation-iteration-count: 3;
+				/*  无限使动画永远持续*/
+				animation-iteration-count: infinite;
+				
+				
+			}
+			/*  如果animation-duration 未指定属性，则动画将不起作用，因为默认值为0*/
+			
+			@keyframes example2{
+				0% {background-color: red;}
+				25% {background-color: yellow;}
+				50% {background-color: blue;}
+				100%{background-color: green;}
+			}
+			.two{
+				width: 100px;
+				height: 100px;
+				background-color: red;
+				animation-name: example2;
+				animation-duration: 4s;
+			}
+			
+			@keyframes example3{
+				0% {background-color: red; left: 0px; top: 0px;}
+				25% {background-color: yellow; left: 200px; top: 0px;}
+				50% {background-color: blue; left: 200px; top: 200px;}
+				75% {background-color: green; left: 0px; top: 200px;}
+				100% {background-color: red; left: 0px; top: 0px;}
+			}
+			
+			.three{
+				width: 100px;
+				height: 100px;
+				position: relative;
+				background-color: red;
+				animation-name: example3;
+				animation-duration: 4s;
+				animation-iteration-count: 3;
+				/*  以相反方向方式运行动画*/
+				/*animation-direction: reverse;*/
+				
+				/* 首先前进  然后向后 然后转发*/
+				animation-direction: alternate;
+			}
+			
+			@keyframes example4{
+				from{left: 0px;}
+				to {left: 300px;}
+			}
+			.four{
+				width: 100px;
+				height: 100px;
+				position: relative;
+				background-color: red;
+				animation-name: example4;
+				animation-duration: 5s;
+				/* 指定一个满启动的动画 然后快速 然后慢慢结束（默认值）*/
+				animation-timing-function: ease;
+				
+			}
+			
+			@keyframes example5{
+				from{left: 0px;}
+				to{left: 150px;}
+			}
+			.five{
+				width: 100px;
+				height: 100px;
+				position: relative;
+				background-color: red;
+				animation-name: example5;
+				animation-duration: 5s;
+				/*  从头到尾指定一个相同速度的动画*/
+				animation-timing-function: linear;
+				/*  延迟2秒开始动画*/
+				animation-delay: 2s;
+				/*  执行次数 循环*/
+				animation-iteration-count: infinite;
+				/* 首先前进  然后向后 然后转发*/
+				animation-direction: alternate;
+				
+				/* 可以简写为： */
+				animation: example5 5s linear 2s infinite alternate;
+				/* 名字  	动画持续时间	 动画的速度曲线	延迟时间	执行次数	 在反向或循环中运行动画*/
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div class="one"></div>
+		<div class="two"></div>
+		<div class="three"></div>
+		<div class="four"></div>
+		<div class="five"></div>
+	</body>
+</html>

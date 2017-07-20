@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+		/*strong元素作为h1的子元素， 〉符号 只会选择一个元素的子元素，后代不可以*/
+			h1>strong{
+				color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>This is <strong>very</strong>important.</h1>
+		<h1>This is <em>really<strong>very</strong></em>importang.</h1>
+	</body>
+</html>

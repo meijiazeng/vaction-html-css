@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.one{
+				position: relative;
+				width: 10em;
+				height: 10em;
+				border: 1px solid;
+			}
+			.two{
+				position: absolute;
+				left: 0;
+				width: 100%;
+				background: #CCCCCC;
+				top: 0;
+				height: 3em;
+				bottom: 0;
+				/* 外边距为auto 可以得到垂直居中的效果，*/
+				margin: auto 0;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="one">
+			<div class="two">
+				element D
+			</div>
+		</div>
+	</body>
+</html>

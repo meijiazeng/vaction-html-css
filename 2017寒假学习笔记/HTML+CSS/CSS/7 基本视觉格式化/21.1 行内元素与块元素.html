@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			/*block 占据一整行，可以修改宽高*/
+			/*inline 宽度有内容决定 不能修改宽高*/
+			a{
+				display: block;
+				
+			}
+			/* 这个标记将会是无效的，因为块元素嵌套在行内元素中
+			 无论怎么改变都不会使以上吧标记变得合法*/
+			p{
+				display: inline;
+				width: 500px;
+				background: red;
+			}
+		</style>
+	</head>
+	<body>
+		<a href="#">
+			<p>this is wrong!</p>
+		</a>
+	</body>
+</html>

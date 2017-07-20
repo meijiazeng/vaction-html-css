@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			p{
+				text-decoration: underline;
+				color: black;
+			}
+			/*text-decoration的值不能继承，strong元素认为text-decoration默认值为none
+			 因此，strong的值为none*/
+			strong{
+				color: gray;
+				/*text-decoration: none;*/
+			}
+		</style>
+	</head>
+	<body>
+		<p>This paragraph,which is black and has a black underline,also
+		contains<strong> strongly emphasized text </strong>which has the 
+		black underline beneath it as welll.</p>
+	</body>
+</html>

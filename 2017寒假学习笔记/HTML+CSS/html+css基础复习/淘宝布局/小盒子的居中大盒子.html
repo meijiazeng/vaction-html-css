@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			/* 要让小盒子在大盒子中定位并且水平居中*/
+			/* 1. 先要让小盒子在大盒子平移大盒子的一半*/
+			/* 2. 再设置margin-left （小盒子的宽度一半，是要负数，那么小盒子就可以在大盒子中间了）*/
+			#big{
+				width: 300px;
+				height: 300px;
+				background: green;
+				position: relative;
+			}
+			#small{
+				width: 200px;
+				height: 200px;
+				background: red;
+				position: absolute;
+				left: 50%;
+				margin-left: -100px;
+				top: 50px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="big">
+			<div id="small"></div>
+		</div>
+	</body>
+</html>

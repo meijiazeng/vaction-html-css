@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			/*.trans{
+				 使元素不可见，但不删除其元素 ，仍然是 元素的一部分
+				visibility: hidden;
+				border: 3px solid gray;
+				background: silver;
+				margin: 2em;
+				padding: 1em;
+			}*/
+			
+			/* visibility 是可以继承的，所以父元素设置为hiden,子元素会继承
+			 想要显示，就设置子元素为visible*/
+			p{
+				visibility: hidden;
+			}
+			.trans{
+				visibility: visible;
+			}
+		</style>
+	</head>
+	<body>
+		<p>
+			This is a paragraph that should be visible.Lorem ipsum,dolor sit
+			amet,<em class="trans"> consecteture adipiscing elit,sed diam nonummy
+			 nibh</em> euismod tincidunt ut laoreet dolore magna.
+		</p>
+	</body>
+</html>

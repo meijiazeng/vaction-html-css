@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			/* 由于已经定位，所以其正常流空间关闭，导致会和正常流内容重叠
+			 并且是相对于自己原来的位置*/
+			span{
+				position: absolute;
+				top: auto;
+				left: auto;
+			}
+		</style>
+	</head>
+	<body>
+		<p>
+			When we consider the effect of positioning, it
+			 quickly becomes clear that authors can do great
+			 deal of damage layout,just as they can do very
+			 interesting things.
+			 <span>
+			 	[4]
+			 </span>
+			 This is usually the case with useful technologies;
+			 the swore always has at least two edges,both of them
+			 sharp.
+		</p>
+	</body>
+</html>

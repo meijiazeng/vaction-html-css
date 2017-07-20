@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.one{
+				width: 300px;
+				height: 100px;
+				border: 1px solid blue;
+			}
+			.two{
+				width: 300px;
+				height: 100px;
+				padding: 50px;
+				border: 1px solid blue;
+			}
+			.three{
+				width: 300px;
+				height: 100px;
+				border: 1px solid blue;
+				box-sizing: border-box;
+			}
+			.four{
+				width: 300px;
+				height: 100px;
+				padding: 50px;
+				border: 1px solid red;
+				/*  border-sizing 属性允许我们在元素的总宽度与高度中包含填充和边框*/
+				box-sizing: border-box;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="one">
+			宽度为300像素，高度为100像素
+		</div>
+		<div class="two">
+			同样宽度为300像素，高度为100像素（因为第二个指定了填充）
+		</div>
+		<div class="three"></div>
+		<div class="four"></div>
+	</body>
+</html>

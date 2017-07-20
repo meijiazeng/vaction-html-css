@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			.warning{
+				font-weight: bold;
+			}
+			.urgent{
+				font-style: italic;
+			}
+			.warning.urgent{
+				background: silver;
+			}
+			/*class 中同时包含warning和urgent的所有元素才会应用这个样式*/
+		</style>
+	</head>
+	<body>
+		<h1>
+			Plutonium
+		</h1>
+		<p>
+			Useful for many applications,plutonium can also be dangerous if improperly handled.
+		</p>
+		<h2>
+			Safety Information
+		</h2>
+		<p class="urgent warning"> 
+			When hangling plutonium,care must be taken to avoid the formaration of a critical mass.
+		</p>
+		<p>
+			With plutonium ,<span class="warning">the possibility of implosion is very real,and must be abvoid at all costs.</span>
+			This can be accomplished by keepind the various masses separete.
+		</p>
+		<h3>
+			Comments
+		</h3>
+		<p>
+			It's best to avoid using plutonium <a>at all</a> if it can be avoided.
+		</p>
+	</body>
+</html>

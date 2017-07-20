@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			p{
+				letter-spacing: 0;
+			}
+			/*使字母之间的间隔扩大或者缩小*/
+			p.spacious{
+				letter-spacing: 0.25em;
+			}
+			p.tight{
+				letter-spacing: -0.25em;
+			}
+			/*可以使用letter-spacing来突出强调结果*/
+			strong{
+				letter-spacing: 0.2em;
+			}
+		</style>
+	</head>
+	<body>
+		<p>The letters in this paragraph are spaced as normal.</p>
+		<p class="spacious">The letters in this paragraph are 
+		spread out a bit.</p>
+		<p class="tight">The letters in this paragraph are a 
+		bit smashed together.</p>
+		<p>This paragraph contains <strong>strongly emphasized text</strong>
+			that is spread out for extra emphasis.
+		</p>
+	</body>
+</html>

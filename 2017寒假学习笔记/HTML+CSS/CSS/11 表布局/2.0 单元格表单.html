@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			table{
+				/* 边框会合并成一个单一的边框 */
+				/*border-collapse: collapse;*/
+				border-collapse: separate;
+				/* 默认值，边框会被分开*/
+			}
+			td{
+				border: 3px double black;
+				padding: 3px;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 单元格之间的距离-->
+		<table cellspacing="5">
+			<tr>
+				<td>cell one</td>
+				<td>cell two</td>
+			</tr>
+			<tr>
+				<td>cell three</td>
+				<td>cell four</td>
+			</tr>
+		</table>
+	</body>
+</html>

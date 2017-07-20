@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			/*capitalize 只对每个单词的首字母大写*/
+			h1{
+				text-transform: capitalize;
+			}
+			/*uppercase 将文本转换为全部大写字符*/
+			strong{
+				text-transform: uppercase;
+			}
+			/*lowercase 将文本转换为全部小写字符*/
+			p.cummings{
+				text-transform: lowercase;
+			}
+			/*normal 默认值对文本不做任何改动*/
+			p.raw{
+				text-transform: none;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>The heading-one at the beginninG</h1>
+		<p>
+			By default,text is display inthe captialzation it has
+			in the source doccument,but <strong>it is possible to change
+			this</strong>using the property 'text-transfrom'.
+		</p>
+		<p class="cummings">
+			For example,one could Create TEXT succh as might 
+			have been Written by the late Poet e.e.cummings.
+		</p>
+		<p class="raw">
+			If you feel the need to Explicitly Declare the transformation 
+			of text to be 'none',that can be done as well.
+		</p>
+	</body>
+</html>

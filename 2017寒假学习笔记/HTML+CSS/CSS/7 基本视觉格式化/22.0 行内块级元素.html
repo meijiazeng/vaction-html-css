@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			div{
+				margin: 1em 0;
+				border: 1px solid;
+			}
+			p{
+				border: 1px dotted;
+			}
+			/*block 占据一整行，可以修改宽高(width和text-align不能应用到行内元素)*/
+			#one p{
+				display: block;
+				width: 6em;
+				text-align: center;
+			}
+			/*inline 宽度有内容决定 不能修改宽高*/
+			#two p{
+				display: inline;
+				width: 6em;
+				text-align: center;
+			}
+			/*行内块级元素 能修改宽高，也不会占据一整行*/
+			#three p{
+				display: inline-block;
+				/*width: 6em;*/
+				height: 2em;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="one">
+			This text is contenf of a block-level level element. within this
+			block-level element is anthor block-level element. <p>Look, it's a
+			block-level 
+			paragraph.</p> Here's the rest of the DIV,which is still
+			block-level.
+		</div>
+		<div id="two">
+			This text is contenf of a block-level level element. within this
+			block-level element is anthor block-level element. <p>Look, it's a
+			block-level paragraph.</p> Here's the rest of the DIV,which is still
+			block-level.
+		</div>
+		<div id="three">
+			This text is contenf of a block-level level element. within this
+			block-level element is anthor block-level element. <p>Look, it's an
+			inline-block.
+			paragraph.</p>  Here's the rest of the DIV,which is still
+			block-level.
+			
+		</div>
+	</body>
+</html>

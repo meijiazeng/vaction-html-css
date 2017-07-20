@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<canvas width="500" height="300"></canvas>
+		<script>
+			var cas = document.querySelector('canvas');
+			var ctx = cas.getContext('2d');
+			
+			ctx.beginPath();
+			ctx.arc(250,150,120,0,2*Math.PI);
+			// arc(x坐标,y坐标,圆的半径,起始角,结束角)
+			ctx.closePath();
+			
+			ctx.fillStyle='#FFA500';
+			ctx.fill();
+		</script>
+	</body>
+</html>

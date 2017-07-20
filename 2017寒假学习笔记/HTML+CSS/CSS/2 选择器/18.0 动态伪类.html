@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			*:hover{
+				background: yellow;
+			}
+		/* 未访问过的样式*/
+			a:link{
+				color: deepskyblue;
+			}
+			/*访问过的样式*/
+			a:visited{
+				color: gray;
+			}
+			/*鼠标指针经过的样式*/
+			a:hover{
+				color: red;
+				text-decoration: line-through;
+				font-size: 18px;
+			}
+			/*被激活的样式*/
+			a:active{
+				color: yellow;
+			}
+			/*突出显示一个准备接受键盘输入的表单元素*/
+			input:focus{
+				background: silver;
+				font-weight: bold;
+			}
+		</style>
+	</head>
+	<body>
+		<a href="#">you are big big dog</a><br />
+		love you <input />
+	</body>
+</html>

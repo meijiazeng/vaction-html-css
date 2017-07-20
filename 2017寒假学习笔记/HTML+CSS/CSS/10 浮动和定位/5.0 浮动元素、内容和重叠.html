@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			/* strong 行内元素完全覆盖了浮动图像，块元素只是将其内容显示在浮动元素之上，
+			 但其背景和边框都放在浮动元素之下*/
+			.sideline{
+				float: left;
+				margin: 10px -15px 10px 10px;
+			}
+			.box{
+				border: 1px solid gray;
+				padding: 0.5em;
+			}
+			strong{
+				border: 3px double black;
+				background: silver;
+				padding: 2px ;
+			}
+			#jump-up{
+				margin-top: -15px;
+				background: silver;
+			}
+		</style>
+	</head>
+	<body>
+		<img src="../../img/1.jpg" class="sideline"/>
+		<p class="box">
+			This paragraph,unremarkable in most ways,does contain an inline
+			element. This inline contains some <br /><strong>strongly emphasized text,
+			which is so marked to make an important point </strong>.The rest of the
+			 element's content is normal anonymous inline content.
+		</p>
+		<p>
+			This is a second paragraph. There's nothing remarkable about it,
+			really.Please move along.
+		</p>
+		<h2 id="jump-up">
+			A Heading!
+		</h2>
+	</body>
+</html>
+ 

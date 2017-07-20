@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			div{
+				float: left;
+			}
+			span{
+				float: left;   /*清除浮动,使页面上的背景同一水平上*/
+				display: inline-block;
+				width: 4px;
+				height: 28px;
+				background: url(../img/jiantou_1.jpg);
+			}
+			b{
+				float: left;
+				height: 28px;    /*不设置宽度,让背景根据内容多少进行平铺*/
+				line-height: 28px;    /*设置行高使文字在背景居中显示*/
+				background: url(../img/jiantou_2.jpg);
+			}
+			i{
+				display: inline-block;
+				width: 19px;
+				height: 28px;
+				background: url(../img/jiantou_3.jpg);
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+		<span></span><b>导航1</b><i></i>
+		</div>
+		<div>
+		<span></span><b>导航导航2</b><i></i>
+		</div>
+		<div>
+		<span></span><b>导航导航导航3</b><i></i>
+		</div>
+		<div>
+		<span></span><b>导航导航导航导航3</b><i></i>
+		</div>
+	</body>
+</html>

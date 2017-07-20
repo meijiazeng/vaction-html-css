@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			/*你希望在一个规则中结合多种装饰，希望超链接既有下划线又有上划线*/
+			a:link,a:visited{
+				text-decoration: underline overline;
+			}
+			h2.stricken{
+				text-decoration: line-through;
+			}
+			h2{
+				text-decoration: underline overline;
+			}
+		</style>
+	</head>
+	<body>
+		<a href="#">我是帅哥</a>
+		<h2 class="stricken">This is has line-through. </h2>
+		<h2>You guess!</h2>
+	</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			span[class*="cloud"]{
+				font-style: italic;
+			}
+			/* 选择class属性中包含字符串"cloud"的所有元素 */
+			span[class^="bar"]{
+				background: silver;
+			}
+			/* 选择class属性值以"bar开头的所有元素"*/
+			span[class$="y"]{
+				font-weight: bold;
+			}
+			/* 选择class属性值以"y"结尾的所有元素*/
+			span.rocky{
+				color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<span class="barren rocky">Mercury</span>
+		<span class="cloudy barren">Venus</span>
+		<span class="life-bearing cloudy">Earth</span>
+	</body>
+</html>

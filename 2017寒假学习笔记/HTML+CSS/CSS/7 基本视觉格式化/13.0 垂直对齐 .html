@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			p{
+				font-size: 12px;
+				line-height: 12px;
+			}
+			/*由于strong元素的行内框顶端已经是行中的最高点，对垂直对齐的
+			 这个修改会把整个行框的顶端上移4像素*/
+			strong{
+				font-size: 24px;
+				vertical-align: 4px;
+			}
+		</style>
+	</head>
+	<body>
+		<p>This is a text,<em>some of which is emphasized</em>,plus other
+		text<br />that is <strong>strongly emphasized</strong>and that is<br />
+		larger than the surrounding text.
+		</p>
+	</body>
+</html>

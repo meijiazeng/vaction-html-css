@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			canvas{
+				border: 1px solid #000;
+			}
+		</style>
+	</head>
+	<body>
+		<canvas width="500" height="300"></canvas>
+		<!-- canvas 默认宽高为300，150 所以要给它设置更大，并且只能够在行内样修改
+			而且不能有像素或者其他单位存在
+		-->
+		<script>
+			//  获取标签
+			var cas = document.querySelector('canvas');
+			// 2d渲染上上下文
+			var ctx = cas.getContext('2d');
+			// 填充颜色
+			ctx.fillStyle = 'red';
+			// 绘制矩形
+			ctx.fillRect(100,100,100,150);
+		</script>
+	</body>
+</html>

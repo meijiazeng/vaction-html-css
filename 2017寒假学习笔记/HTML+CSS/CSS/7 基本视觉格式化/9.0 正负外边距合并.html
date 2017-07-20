@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			/*两个边距的最大是20px*/
+			li{
+				margin-bottom: 20px;
+			}
+			ul{
+				margin-bottom: -15px;
+			}
+			/*两个负外边距中较大一个(-18px)*/
+			h1{
+				margin-top: -18px;
+			}
+			/*所以最后得到的距离是20px - 18px = 2px*/
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li>Alist item</li>
+			<li>Another list item</li>
+		</ul>
+		<h1>A Heading-1</h1>
+	</body>
+</html>

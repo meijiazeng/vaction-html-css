@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			/*前两段外边距合并，所以她们之间只是相隔1em
+			 最后两端之间的距离是2em，因为内边距不合并*/
+			p{
+				margin: 1em 0;
+				padding: 1em 0;
+			}
+			.one, .three{
+				background: silver;
+			}
+			.two,.four{
+				background: silver;
+			}
+			.three,.four{
+				margin: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<p class="one">
+			This,the first paragraph,has both padding and margin.
+			Its background is gray;
+		</p>
+		<p class="two">
+			In the second paragraph,we have both padding and 
+			margin with a silver background.
+		</p>
+		<p class="three">
+			The third paragraph has padding,but not margin,and
+			a gray background.
+		</p>
+		<p class="four">
+			Paragraph number four also has padding but no margin,
+			and a silver background.
+		</p>
+	</body>
+</html>

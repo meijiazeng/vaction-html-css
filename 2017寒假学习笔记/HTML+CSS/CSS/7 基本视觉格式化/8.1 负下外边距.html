@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			p.neg{
+				margin-bottom: -50px;
+				margin-right: 10px;
+				margin-left: 10px;
+				margin-top: 0;
+				border: 3px solid gray;
+			}
+			/*负的下边距会使段落看上去被下拉*/
+			div{
+				width: 420px;
+				margin-top: 50px;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<p class="neg">A paragraph.</p>
+		</div>
+		<p class="two"> The next paragraph.</p>
+	</body>
+</html>

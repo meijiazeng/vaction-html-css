@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			ul{
+				display: inline-block;
+				padding: 0;
+				margin: 0;
+			}
+			li{
+				display: inline-block;
+			}
+			li a{
+				color: black;
+				float: left;
+				padding: 8px 16px;
+				text-decoration: none;
+				/* 设置圆形的按钮*/
+				border-radius: 5px;
+				/* 设置页面链接悬停中创建转换结果*/
+				transition: background-color .3s;
+				/*  设置分页大小*/
+				font-size: 22px;
+			}
+			/* 使用.active 突出显示当前页面  并使用hover将鼠标移动到其上时改变每个页面链接的颜色*/
+			.active{
+				background-color: red;
+				color: white;
+			}
+			a:hover:not(.active){
+				background-color: #ddd;
+			}
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li><a href="#"><<</a></li>
+			<li><a href="#">1</a></li>
+			<li><a href="#" class="active">2</a></li>
+			<li><a href="#">3</a></li>
+			<li><a href="#">4</a></li>
+			<li><a href="#">5</a></li>
+			<li><a href="#">6</a></li>
+			<li><a href="#">>></a></li>
+		</ul>
+	</body>
+</html>

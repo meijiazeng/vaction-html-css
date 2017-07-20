@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+    	.father{
+            width: 500px;
+            border:1px solid black;
+            overflow: hidden;
+            /* 给父元素增加BFC区域*/
+           /*BFC 独立的渲染区域 不影响别人*/
+        }
+        .one{
+            width: 200px;
+            height: 200px;
+            background: green;
+            float: left;
+        }
+        .two{
+            width: 200px;
+            height: 200px;
+            background: red;
+            float: left;
+        }
+        .son
+        {
+            width: 600px;
+            height: 200px;
+            background: orange;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div class="one"></div>
+        <div class="two"></div>
+    </div>
+    <div class="son">
+
+    </div>
+</body>
+</html>

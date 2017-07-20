@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		
+		<!--<audio src="陈伟霆 - 今天终于知道错.mp3" controls autoplay></audio>-->
+		<!-- controls 显示控件     	autoplay 自动播放-->
+		
+		<audio controls>
+			<!--  通过source 标签指定多格式音频文件 -->
+			
+			
+			<source src="陈伟霆 - 今天终于知道错.mp3">
+			<source src="李佳薇 - 煎熬.ogg">
+			浏览器不支持HTML5音频播放
+			<!-- 解决浏览器兼容问题 如果能够兼容第一个就不会执行另一个-->
+			<!--  如果两个都不能兼容 就会弹出不能被支持的文字-->
+		</audio>
+	</body>
+</html>

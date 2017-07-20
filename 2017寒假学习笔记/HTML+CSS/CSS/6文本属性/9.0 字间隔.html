@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			/*word-spacing如果提供一个正值，那么字之间的间隔增加*/
+			p.spread{
+				word-spacing: 0.5em;
+			}
+			/*word-spacing如果提供一个负值，那么字之间的间隔减少*/
+			p.tight{
+				word-spacing: -0.5em;
+			}
+			/*word-spacing 的默认值（normal）和0一样*/
+			p.base{
+				word-spacing: normal;
+			}
+			p.norm{
+				word-spacing: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<p class="spread">The spaces between words in this paragraph
+		will be increased by 0.5em.</p>
+		<p class="tight">The spaces between words in this paragraph 
+		will be decreased by 0.5em.</p>
+		<p class="base">The spaces between words in this paragraph will 
+			be normal.</p>
+		<p class="norm">The spaces between words in this paragraph will 
+			be normal.</p>
+	</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.btn1,.btn3{
+				background-color: green;
+				border: none;
+				color: white;
+				padding: 15px 32px;
+				text-decoration: none;
+				font-size: 20px;
+				/* 向圆形按钮添加圆角*/
+				border-radius: 2px;
+			}
+			
+			/* 彩色按钮边框*/
+			.btn2{
+				padding: 15px 32px;
+				background-color: white;
+				color: black;
+				border: 2px solid green;
+			}
+			
+			/*  可移动按钮*/
+			.btn2{
+				transition-duration: 0.4s;
+			}
+			.btn2:hover{
+				background-color: green;
+				color: white;
+			}
+			
+			/*  阴影按钮*/
+			.btn2{
+				box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+			}
+			.btn2:hover{
+				box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24);
+			}
+			
+			.btn3{
+				/*  设置按钮宽度*/
+				width: 250px;
+				opacity: 0.6;
+				cursor: not-allowed;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<!-- 创建按钮组  （删除几个按钮的边距  并且添加 float:left）-->
+		<button class="btn1">20px</button>
+		<button class="btn2">20px</button>
+		<button class="btn3">20px</button>
+	</body>
+</html>
